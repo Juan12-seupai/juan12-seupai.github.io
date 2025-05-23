@@ -4,8 +4,14 @@ body {
   }
 
   header {
-    background-color: #388101;
+    background-color: #bb0000;
     padding: 20px 0;
+  }
+  main{
+    width: 800px; margin: 0 auto;
+  }
+  h1{
+    text-align: center;
   }
 
   nav ul {
@@ -29,6 +35,6 @@ body {
   }
 
   nav ul li a:hover {
-    background-color: #669b25c7;
+    background-color: #ea6e6ec7;
     border-radius: 20px;
   }
