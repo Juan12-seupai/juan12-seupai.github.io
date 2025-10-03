@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #33a82e; /* Verde principal */
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    background-color: white;
+    color: #33a82e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
+
+.logo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    accent-color: yellow; /* Cor do checkbox */
+}
+
+.checkbox-group label {
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+.btn-link {
+    background-color: yellow;
+    color: #33a82e;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.btn-submit {
+    background-color: yellow;
+    color: #33a82e;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Para o logo de reciclagem, você pode usar uma imagem ou recriar com CSS */
+/* Se não tiver a imagem, você pode remover a tag img e tentar recriar com CSS */
+/* Exemplo de logo de reciclagem com CSS (mais complexo para um exemplo rápido) */
+/* .logo::before {
+    content: '\267B'; /* Unicode para o símbolo de reciclagem */
+    /* font-size: 3em; */
+    /* color: #33a82e; */
+/* } */

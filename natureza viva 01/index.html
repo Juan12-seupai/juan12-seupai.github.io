@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0f2e0;
+        }
+        .form-container {
+            background-color: #2ca02c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            color: white;
+        }
+        .form-container h1 {
+            text-align: center;
+            background-color: #1f7a1f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #f0e000;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>CADASTRO</h1>
+        <form id="cadastroForm">
+            <input type="text" name="usuario" placeholder="Nome de usuário" required>
+            <input type="text" name="cpf" placeholder="CPF/CNPJ" required>
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="text" name="cep" placeholder="CEP" required>
+            <input type="text" name="telefone" placeholder="Telefone" required>
+            <input type="email" name="email" placeholder="E-MAIL" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">CADASTRAR-SE</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('cadastroForm');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            alert("Cadastro realizado com sucesso!");
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+</html>
